@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>nabu.web.wsdl</groupId>
 	<artifactId>client</artifactId>
-	<version>1.0</version>
+	<version>${nabu.web.wsdl-client-version}</version>
 	<name>client</name>
 	
 	<parent>
@@ -13,4 +13,15 @@
 		<artifactId>modules</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
+	
+	<dependencies>
+		<dependency>
+			<groupId>nabu.types</groupId>
+			<artifactId>xml</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>nabu.protocols.http</groupId>
+			<artifactId>client</artifactId>
+		</dependency>
+	</dependencies>
 </project>
